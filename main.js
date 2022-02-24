@@ -4,7 +4,7 @@ import Chance from "chance";
 const chance = new Chance();
 const name = chance.name();
 document.querySelector('#app').innerHTML = `
-<img src="${chance.avatar()}" class="avater"; style=border-color:${chance.color}  />
+<img src="${chance.avatar()}" class="avater"; style=border-color:${chance.color()}  />
   <h1>${name}</h1>
   <p>${chance.email()}</p>
   <p>${chance.phone()}</p>
